@@ -2,60 +2,50 @@
 
 ## Overview
 
-A web-based DNS Lookup Tool built using Python and Flask that allows users to retrieve IP addresses for domain names.
+A command-line DNS Lookup Tool developed in Python that retrieves the IP address of a domain name.
 
 ## Features
 
-* DNS lookup for user-provided domains
-* Retrieves IP addresses
-* Simple web interface
-* Real-time results display
+* Domain to IP address resolution
+* Timestamp generation for lookups
+* Continuous lookup mode
+* Exit option for users
 
 ## Technologies Used
 
 * Python
-* Flask
-* HTML
+* Socket Module
+* Datetime Module
 
-## Project Workflow
+## How It Works
 
-User enters domain name
-→ DNS lookup performed
-→ IP address retrieved
-→ Result displayed on webpage
+1. User enters a domain name.
+2. The application performs DNS resolution.
+3. The corresponding IP address is displayed.
+4. Lookup timestamp is recorded.
 
-## How to Run
+## Example
 
-1. Install Flask
+Input:
+
+google.com
+
+Output:
+
+Domain Name: google.com
+IP Address: 142.250.xxx.xxx
+Time: 2026-06-02
+
+## Run
 
 ```bash
-pip install flask
-```
-
-2. Run the application
-
-```bash
-python app.py
-```
-
-3. Open browser
-
-```text
-http://127.0.0.1:5000
+python dns_lookup.py
 ```
 
 ## Learning Outcomes
 
-* DNS and networking fundamentals
-* Flask web development
-* Backend and frontend integration
-* Python application development
-
-## Future Improvements
-
-* MX Record Lookup
-* NS Record Lookup
-* CNAME Record Lookup
-* Better UI Design
-* Domain information dashboard
+* DNS fundamentals
+* Network programming basics
+* Python socket programming
+* Exception handling
 
